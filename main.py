@@ -46,10 +46,6 @@ raw_substitutions = {
     "lmfao": "lemfao",
     ":3": ", meow? ",
     ":3c": ", meow? ", 
-    "gyatt": "gyaht",
-    "gyat": "gyaht",
-    "gyattebayo": "gyahtebayo",
-    "gyatebayo": "gyahtebayo",
     "e+?r+?h+?m+?": "errrrrrm,",
     "imo": "in my opinion",
     "btw": "by the way",
@@ -57,11 +53,6 @@ raw_substitutions = {
     "stfu": "shut the fuck up",
     "irl": "in real life",
     "ez": "easy",
-    "cezmp s2": "Says M P Season 2",
-    "cezmp s3": "Says M P Season 3",
-    "cezmp3": "Says M P Season 3",
-    "cezmp2": "Says M P Season 2",
-    "cezmp": "Says M P",
     "ngl": "not gonna lie",
     "ikr": "i know right",
     "idk": "i don't know",
@@ -89,7 +80,6 @@ raw_substitutions = {
     "mfs": "em eff's",
     "idfk": "i don't fucking know",
     "yw": "you're welcome",
-    "cez": "sez",
     "dnc": "do not care",
     "rn": "right now",
     "af": "as fuck",
@@ -98,7 +88,6 @@ raw_substitutions = {
     "fr": "for real",
     "dms": "DM's",
     "wdym": "what do you mean",
-    "markiplier": "markaplier"
 }
 
 ssml_substitutions = {
@@ -168,9 +157,6 @@ def set_user_setting(user: discord.User, setting: str, value: str):
     except (TypeError, ValueError) as e:
         print("Attempt to set a setting to an invalid value")
     return -1
-
-
-test_audio_path = r"C:\Users\norso\Files\media\audio\sound listeny ears\music other people made\spiders\Pik-min - Pikmin sound.mp3"
 
 source_queues = {} # indexed by voice client
 async def queuedSourcesPlayer():
